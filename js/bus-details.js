@@ -1,0 +1,1 @@
+const bus=JSON.parse(localStorage.getItem("selectedBus")||"null");if(!bus)location.href="search.html";else{busName.textContent=bus.name;busType.textContent=bus.type;price.textContent="₹"+bus.price;dep.textContent=bus.departure;arr.textContent=bus.arrival;from.textContent=localStorage.getItem("fromCity");to.textContent=localStorage.getItem("toCity")}
