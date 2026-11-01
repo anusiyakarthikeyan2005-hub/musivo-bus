@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Musivo | Bus Booking Made Simple</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="index.html"><b>M</b> Musivo</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="search.html">Bus Tickets</a>
+    <a href="bus-registration.html">Register Bus</a>
+    <a href="login.html" id="navLogin">Login</a>
+    <a href="#" id="logout" class="hide">Logout</a>
+    </nav>
+</header>
+
+<section class="hero">
+  <div class="heroText">
+    <small>TRAVEL COMFORTABLY • ARRIVE CONFIDENTLY</small>
+    <h1>Find your bus.<br><span>Book your journey.</span></h1>
+    <p>Choose your route, compare available buses, select your seat and complete your booking in a few simple steps.</p>
+  </div>
+
+  <div class="booking">
+    <div class="tabs"><button class="active">Bus Booking</button></div>
+    <div class="searchGrid">
+      <div class="field auto">
+        <label>FROM</label>
+        <input id="fromCity" placeholder="Leaving from..." autocomplete="off">
+        <div id="fromSuggestions" class="suggestions"></div>
+      </div>
+
+      <button id="swapBtn" class="swap" title="Swap locations">⇄</button>
+
+      <div class="field auto">
+        <label>TO</label>
+        <input id="toCity" placeholder="Going to..." autocomplete="off">
+        <div id="toSuggestions" class="suggestions"></div>
+      </div>
+
+      <div class="field">
+        <label>TRAVEL DATE</label>
+        <input id="travelDate" type="date">
+      </div>
+
+      <button id="searchBtn" class="primary">Find Buses →</button>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <small class="pink">POPULAR ROUTES</small>
+  <h2>Where would you like to go?</h2>
+  <p>Start with a popular route or search for any destination available on Musivo.</p>
+  <div class="cards">
+    <article class="click-card" onclick="location.href='search.html?from=Chennai&to=Coimbatore'"><span>🏙️</span><h3>Chennai → Coimbatore</h3><p>Comfortable overnight and daytime services.</p><small>View buses →</small></article>
+    <article class="click-card" onclick="location.href='search.html?from=Chennai&to=Madurai'"><span>🏛️</span><h3>Chennai → Madurai</h3><p>A convenient route for city and temple trips.</p><small>View buses →</small></article>
+    <article class="click-card" onclick="location.href='search.html?from=Coimbatore&to=Ooty'"><span>🌴</span><h3>Coimbatore → Ooty</h3><p>Plan an easy getaway towards the hills.</p><small>View buses →</small></article>
+    <article class="click-card" onclick="location.href='search.html?from=Chennai&to=Pondicherry'"><span>🌊</span><h3>Chennai → Pondicherry</h3><p>A simple option for a quick coastal trip.</p><small>View buses →</small></article>
+  </div>
+</section>
+
+<section class="darkFeatures">
+  <a href="search.html" class="feature-card"><b>01</b><h3>Easy Route Selection</h3><p>Enter your starting point and destination to find matching bus services.</p><span>Search routes →</span></a>
+  <a href="search.html" class="feature-card"><b>02</b><h3>Compare Bus Options</h3><p>Check bus type, timings, journey duration and fare before choosing.</p><span>Compare buses →</span></a>
+  <a href="seat-selection.html" class="feature-card"><b>03</b><h3>Choose Your Seat</h3><p>View the seat layout and select the seat that suits you.</p><span>Choose seat →</span></a>
+  <a href="my-bookings.html" class="feature-card"><b>04</b><h3>Manage Bookings</h3><p>Complete passenger details and view your booking information later.</p><span>My bookings →</span></a>
+</section>
+
+<section class="section">
+  <small class="pink">HOW MUSIVO WORKS</small>
+  <h2>Three simple steps</h2>
+  <div class="cards three-cards">
+    <article class="click-card" onclick="location.href='search.html'"><span class="step-number">1</span><h3>Search</h3><p>Enter your From, To and travel date.</p><small>Start searching →</small></article>
+    <article class="click-card" onclick="location.href='search.html'"><span class="step-number">2</span><h3>Select</h3><p>Choose a bus and pick an available seat.</p><small>View bus options →</small></article>
+    <article class="click-card" onclick="location.href='seat-selection.html'"><span class="step-number">3</span><h3>Book</h3><p>Add passenger details and confirm your journey.</p><small>Continue booking →</small></article>
+  </div>
+</section>
+
+<footer>
+  <h2>Musivo</h2>
+  <p>Simple bus booking for smoother journeys.</p>
+  <p>© 2026 Musivo</p>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>
